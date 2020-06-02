@@ -1,0 +1,29 @@
+.docs-logo-wrapper{
+    position: absolute;
+    left: 15px;
+    top: 0.5rem;
+}
+
+.docs-branding {
+    min-height: 69px;
+}
+
+.theme-bg-dark {
+    background: #f8f9fa;
+}
+
+
+.search-form .search-input {
+    font-size: 0.875rem;
+    border-radius: 25px;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+}
+
+.form-control {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    height: 2.75rem;
+    border-color: #e0f7e6;
+    width: 100%;
+}

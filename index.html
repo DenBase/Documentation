@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База Знаний</title>
+    <meta name="description" content="База знаний МИАЦ ">
+
+    <!-- Подключаем шрифт Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header fixed__top bg-light">
+        <div class="branding docs-branding ">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper ml-2">
+                    <!-- Подключаем лого -->
+                    <div class="site-logo">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo-icon mr-2" src="assets/images/logo.svg" alt="logo" height="40px">
+                            <span class="logo-text">База<span class="text-alt"> данных</span></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- кнопка "вход" -->
+                <div class="d-flex justify-content-end align-items-center mt-1">
+                    <button class="btn btn-outline-primary d-none d-lg-flex btn-entry mr-2 px-4" type="button" value="Input">Вход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Поле глобального поиска на главвной -->
+    <div class="page-header theme-bg-dark py-5 text-center position-relative">
+        <div class="theme-bg-shapes-right"></div>
+        <div class="theme-bg-shapes-left"></div>
+        <div class="container">
+            <h1 class="page-heading single-col-max mx-auto">Найдётся всё   :)</h1>
+            <div class="page-intro single-col-max mx-auto">В нашей базе есть все ответы на интересующие вас вопросы </div>
+            <div class="main-search-box pt-3 d-block mx-auto">
+                <form class="search-form w-100">
+                    <input type="text" placeholder="Что вы ищите..." name="search" class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Блок с главными разделами -->
+<div class="page-content">
+    <div class="container">
+        <div class="docs-overview py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <span class="theme-icon-holder card-icon-holder mr-2">
+                                    <i class="fas fa-map-signs"></i>
+                                </span>
+                                <!--//card-icon-holder-->
+                                <span class="card-title-text">БАРС</span>
+                            </h5>
+                            <div class="card-text">
+                                Здесь будет описание системы
+                            </div>
+                            <a class="card-link-mask" href="docs-page.html#section-1"></a>
+                        </div>
+                        <!--//card-body-->
+                    </div>
+                    <!--//card-->
+                </div>
+                <!--//col-->
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <span class="theme-icon-holder card-icon-holder mr-2">
+                                    <i class="fas fa-arrow-down"></i>
+                                </span>
+                                <!--//card-icon-holder-->
+                                <span class="card-title-text">Демография</span>
+                            </h5>
+                            <div class="card-text">
+                                Здесь будет описание системы
+                            </div>
+                            <a class="card-link-mask" href="docs-page.html#section-2"></a>
+                        </div>
+                        <!--//card-body-->
+                    </div>
+                    <!--//card-->
+                </div>
+                <!--//col-->
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <span class="theme-icon-holder card-icon-holder mr-2">
+                                    <i class="fas fa-box fa-fw"></i>
+                                </span>
+                                <!--//card-icon-holder-->
+                                <span class="card-title-text">SQL</span>
+                            </h5>
+                            <div class="card-text">
+                                Здесь будет описание системы
+                            </div>
+                            <a class="card-link-mask" href="docs-page.html#section-3"></a>
+                        </div>
+                        <!--//card-body-->
+                    </div>
+                    <!--//card-->
+                </div>
+
+            </div>
+            <!--//row-->
+        </div>
+        <!--//container-->
+    </div>
+    <!--//container-->
+</div>
+
+
+    <!-- Подключаем JS -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
