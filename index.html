@@ -7,127 +7,195 @@
     <title>База Знаний</title>
     <meta name="description" content="База знаний МИАЦ ">
 
-    <!-- Подключаем шрифт Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <!-- Подключаем стили -->
+    <!-- Стили -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <header class="header fixed__top bg-light">
-        <div class="branding docs-branding ">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper ml-2">
-                    <!-- Подключаем лого -->
-                    <div class="site-logo">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="logo-icon mr-2" src="assets/images/logo.svg" alt="logo" height="40px">
-                            <span class="logo-text">База<span class="text-alt"> данных</span></span>
-                        </a>
-                    </div>
-                </div>
-                <!-- кнопка "вход" -->
-                <div class="d-flex justify-content-end align-items-center mt-1">
-                    <button class="btn btn-outline-primary d-none d-lg-flex btn-entry mr-2 px-4" type="button" value="Input">Вход</button>
-                </div>
-            </div>
-        </div>
+    <header>
+        <!-- Шапка. Лого. Вход -->
+        <nav class="navbar bg-light">
+            <a class="navbar-brand text-dark" href="#">
+                <img src="assets/images/book.gif" height="30" class="d-inline-block align-top mr-1" alt="Логотип Сова">
+                <span class="logo-text">База Знаний</span>
+            </a>
+            <button class="btn btn-light mb-1" type="button" value="Input">Войти</button>
+        </nav>
     </header>
 
-<!-- Поле глобального поиска на главвной -->
-    <div class="page-header theme-bg-dark py-5 text-center position-relative">
-        <div class="theme-bg-shapes-right"></div>
-        <div class="theme-bg-shapes-left"></div>
+    <!-- Глобальный поиск на главной -->
+    <div class="bg-light pt-5 pb-5">
+        <div class="container text-center pt-3">
+            <h2 class="pt-4 display-4">Найти ответ легко и просто</h2>
+            <div class="main-search-box  pt-4 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Начните вводить запрос...">
+                    <div class="input-group-append">
+                        <button class="btn btn-success px-3" type="submit">
+                            <svg class="icon-search" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок с главными разделами-карточками-->
+    <div class="pb-5">
         <div class="container">
-            <h1 class="page-heading single-col-max mx-auto">Найдётся всё   :)</h1>
-            <div class="page-intro single-col-max mx-auto">В нашей базе есть все ответы на интересующие вас вопросы </div>
-            <div class="main-search-box pt-3 d-block mx-auto">
-                <form class="search-form w-100">
-                    <input type="text" placeholder="Что вы ищите..." name="search" class="form-control search-input">
-                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-                </form>
+            <div class="row pt-5">
+
+                <!-- Карточка БАРС -->
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <span class="card-icon-holder .bg-success card-icon">
+                                    <svg enable-background="new 0 0 512 512" height="35" viewBox="0 0 512 512"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="m158.5 257.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 317.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 377.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 437.5h32.859c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-32.859c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5h111c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-44.91c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h44.91c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-111c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5z" />
+                                                <path
+                                                    d="m436 440.269c-4.143 0-7.5 3.358-7.5 7.5v36.731c0 6.893-5.607 12.5-12.5 12.5h-320c-6.893 0-12.5-5.607-12.5-12.5v-388.731c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v388.731c0 15.164 12.337 27.5 27.5 27.5h320c15.163 0 27.5-12.336 27.5-27.5v-36.731c0-4.142-3.357-7.5-7.5-7.5z" />
+                                                <path
+                                                    d="m441.304 142.197-140-140c-1.408-1.407-3.315-2.197-5.304-2.197h-200c-15.163 0-27.5 12.336-27.5 27.5v35.859c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-35.859c0-6.893 5.607-12.5 12.5-12.5h192.5v112.5c0 15.164 12.337 27.5 27.5 27.5h112.5v260.769c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-268.269c0-1.989-.79-3.897-2.196-5.303zm-137.804-14.697v-101.894l114.394 114.394h-101.894c-6.893 0-12.5-5.607-12.5-12.5z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="card-title-text pl-2">БАРС СВОДЫ</span>
+                            </div>
+                            <!-- Список категорий БАРС -->
+                            <div class="box-card-list ml-4 pl-2">
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Дизайнер форм</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Разработчику</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Администратору</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Карточка ДЕМОГРАФИЯ -->
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <span class="card-icon-holder card-icon">
+                                    <svg enable-background="new 0 0 512 512" height="35" viewBox="0 0 512 512"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="m158.5 257.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 317.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 377.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 437.5h32.859c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-32.859c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5h111c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-44.91c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h44.91c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-111c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5z" />
+                                                <path
+                                                    d="m436 440.269c-4.143 0-7.5 3.358-7.5 7.5v36.731c0 6.893-5.607 12.5-12.5 12.5h-320c-6.893 0-12.5-5.607-12.5-12.5v-388.731c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v388.731c0 15.164 12.337 27.5 27.5 27.5h320c15.163 0 27.5-12.336 27.5-27.5v-36.731c0-4.142-3.357-7.5-7.5-7.5z" />
+                                                <path
+                                                    d="m441.304 142.197-140-140c-1.408-1.407-3.315-2.197-5.304-2.197h-200c-15.163 0-27.5 12.336-27.5 27.5v35.859c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-35.859c0-6.893 5.607-12.5 12.5-12.5h192.5v112.5c0 15.164 12.337 27.5 27.5 27.5h112.5v260.769c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-268.269c0-1.989-.79-3.897-2.196-5.303zm-137.804-14.697v-101.894l114.394 114.394h-101.894c-6.893 0-12.5-5.607-12.5-12.5z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="card-title-text pl-2">ДЕМОГРАФИЯ</span>
+                            </div>
+                            <!-- Список категорий ДЕМОГРАФИИ -->
+                            <div class="box-card-list ml-4 pl-2">
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Дизайнер форм</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Разработчику</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Администратору</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка SQL -->
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <span class="card-icon-holder card-icon">
+                                    <svg enable-background="new 0 0 512 512" height="35" viewBox="0 0 512 512"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="m158.5 257.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 317.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 377.5h195c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-195c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h195c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-195c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z" />
+                                                <path
+                                                    d="m158.5 437.5h32.859c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-32.859c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5h111c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-44.91c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h44.91c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5h-111c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5z" />
+                                                <path
+                                                    d="m436 440.269c-4.143 0-7.5 3.358-7.5 7.5v36.731c0 6.893-5.607 12.5-12.5 12.5h-320c-6.893 0-12.5-5.607-12.5-12.5v-388.731c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v388.731c0 15.164 12.337 27.5 27.5 27.5h320c15.163 0 27.5-12.336 27.5-27.5v-36.731c0-4.142-3.357-7.5-7.5-7.5z" />
+                                                <path
+                                                    d="m441.304 142.197-140-140c-1.408-1.407-3.315-2.197-5.304-2.197h-200c-15.163 0-27.5 12.336-27.5 27.5v35.859c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-35.859c0-6.893 5.607-12.5 12.5-12.5h192.5v112.5c0 15.164 12.337 27.5 27.5 27.5h112.5v260.769c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-268.269c0-1.989-.79-3.897-2.196-5.303zm-137.804-14.697v-101.894l114.394 114.394h-101.894c-6.893 0-12.5-5.607-12.5-12.5z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="card-title-text pl-2">SQL </span>
+                            </div>
+                            <!-- Список категорий SQL-->
+                            <div class="box-card-list ml-4 pl-2">
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Дизайнер форм</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Разработчику</a>
+                                </ul>
+                                <ul class="card-list">
+                                    <a href="#" class="card-link">Администратору</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-<!-- Блок с главными разделами -->
-<div class="page-content">
-    <div class="container">
-        <div class="docs-overview py-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-4 py-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <span class="theme-icon-holder card-icon-holder mr-2">
-                                    <i class="fas fa-map-signs"></i>
-                                </span>
-                                <!--//card-icon-holder-->
-                                <span class="card-title-text">БАРС</span>
-                            </h5>
-                            <div class="card-text">
-                                Здесь будет описание системы
-                            </div>
-                            <a class="card-link-mask" href="docs-page.html#section-1"></a>
-                        </div>
-                        <!--//card-body-->
-                    </div>
-                    <!--//card-->
-                </div>
-                <!--//col-->
-                <div class="col-12 col-lg-4 py-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <span class="theme-icon-holder card-icon-holder mr-2">
-                                    <i class="fas fa-arrow-down"></i>
-                                </span>
-                                <!--//card-icon-holder-->
-                                <span class="card-title-text">Демография</span>
-                            </h5>
-                            <div class="card-text">
-                                Здесь будет описание системы
-                            </div>
-                            <a class="card-link-mask" href="docs-page.html#section-2"></a>
-                        </div>
-                        <!--//card-body-->
-                    </div>
-                    <!--//card-->
-                </div>
-                <!--//col-->
-                <div class="col-12 col-lg-4 py-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <span class="theme-icon-holder card-icon-holder mr-2">
-                                    <i class="fas fa-box fa-fw"></i>
-                                </span>
-                                <!--//card-icon-holder-->
-                                <span class="card-title-text">SQL</span>
-                            </h5>
-                            <div class="card-text">
-                                Здесь будет описание системы
-                            </div>
-                            <a class="card-link-mask" href="docs-page.html#section-3"></a>
-                        </div>
-                        <!--//card-body-->
-                    </div>
-                    <!--//card-->
-                </div>
-
-            </div>
-            <!--//row-->
-        </div>
-        <!--//container-->
-    </div>
-    <!--//container-->
-</div>
-
+    <footer class="footer text-center">
+        <span class="footer-copyright ">&copy;2020 МИАЦ<span>
+    </footer>
 
     <!-- Подключаем JS -->
+    <!-- <script src="assets/plugins/bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

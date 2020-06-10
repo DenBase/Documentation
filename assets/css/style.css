@@ -1,29 +1,74 @@
-.docs-logo-wrapper{
-    position: absolute;
-    left: 15px;
-    top: 0.5rem;
+html {
+    min-height: 100%;
+    position: relative;
 }
 
-.docs-branding {
-    min-height: 69px;
-}
-
-.theme-bg-dark {
-    background: #f8f9fa;
-}
-
-
-.search-form .search-input {
-    font-size: 0.875rem;
-    border-radius: 25px;
-    padding-right: 3rem;
-    padding-left: 1.5rem;
+.container {
+   max-width: 1140px;
 }
 
 .form-control {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
-    height: 2.75rem;
-    border-color: #e0f7e6;
-    width: 100%;
+    height: 3rem;
+    border-color: #dfdfdf;
 }
+
+.main-search-box {
+    max-width: 900px;
+}
+
+.card {
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.10) !important;
+    background: #ffffff;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    padding-top: 12px;
+    display: inline-block;
+}
+
+.card-title-text {
+    font-weight: 100;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+}
+
+.card-icon-holder {
+    display: inline-block;
+    background: #f8f9fa;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.card {
+    margin: 20px 0px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(225deg,#333c66,#1d2447);
+   
+}
+
+.footer-copyright {
+    display: inline-block;
+    color: white;
+    font-size: small;
+    padding-top: 15px;
+}
+
