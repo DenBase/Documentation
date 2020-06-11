@@ -3,8 +3,16 @@ html {
     position: relative;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .container {
-   max-width: 1140px;
+    max-width: 1140px;
 }
 
 .form-control {
@@ -24,7 +32,7 @@ html {
 }
 
 .card:hover {
-    box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.10) !important;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.10) !important;
     background: #ffffff;
 }
 
@@ -61,8 +69,8 @@ html {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background: linear-gradient(225deg,#333c66,#1d2447);
-   
+    background: linear-gradient(225deg, #333c66, #1d2447);
+
 }
 
 .footer-copyright {
@@ -72,3 +80,80 @@ html {
     padding-top: 15px;
 }
 
+.footer-docs {
+    margin-top: 30px;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #e7e9ed;
+}
+
+.footer-copyright-docs {
+    display: inline-block;
+    color: rgb(8, 8, 8);
+    font-size: small;
+    padding-top: 15px;
+}
+
+#docs-nav {
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.docs-wrapper {
+    margin-top: 90px;
+}
+
+#docs-sidebar.sidebar-visible {
+    transform: translateX(0);
+    display: block;
+}
+
+.docs-sidebar {
+    width: 250px;
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    height: calc(100% - 60px);
+    background: #fff;
+    overflow-y: auto;
+    scrollbar-color: rgba(0, 0, 0, 0.2) #f5f5f5;
+    scrollbar-width: thin;
+    transition: transform 0.35s ease-in-out;
+    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.docs-article {
+    padding: 4rem;
+    color: #5d6778;
+
+}
+
+.docs-article .section-heading {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    color: #252930;
+}
+
+.docs-article .docs-section {
+    padding: 2rem ;
+    border-bottom: 1px solid #e7e9ed;
+}
+
+/* Кастомный скроллбар */
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #c5cee0;
+}
+
+.custom-scrollbar {
+    scrollbar-color: #4285F4 #F5F5F5;
+}
