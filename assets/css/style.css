@@ -3,18 +3,24 @@ html {
     position: relative;
 }
 
+.container {
+    max-width: 1140px;
+}
+
+/* шапка */
+.header {
+    height: 60px;
+}
+
 .fixed-top {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1;
 }
 
-.container {
-    max-width: 1140px;
-}
-
+/* форма гдобального поиска */
 .form-control {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
@@ -26,6 +32,54 @@ html {
     max-width: 900px;
 }
 
+.search-form {
+    position: relative;
+    width: 100%;
+}
+
+/* форма поиска на странице документация*/
+.search-form .search-input {
+    width: 85%;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 20px;
+}
+
+.search-form .search-btn {
+    color: #cacaca;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    margin-right: 24px;
+}
+
+.form-control-docs {
+    height: 2rem;
+    border: 1px solid #ced4da;
+} 
+
+.form-control-docs:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.docs-sidebar-toggler {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Карточки на главной */
 .card {
     border-radius: 5px;
     background: #ffffff;
@@ -64,45 +118,47 @@ html {
     margin: 20px 0px;
 }
 
+/* Форма авторизации */
+.form-heding {
+    font-size: 2em;
+    text-align: center;
+    margin: 160px 0px 30px;
+}
+
+/* Подвал на главной */
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
-    background: linear-gradient(225deg, #333c66, #1d2447);
-
+    background-color: #1d2447;
 }
 
-.footer-copyright {
-    display: inline-block;
-    color: white;
-    font-size: small;
-    padding-top: 15px;
-}
-
+/* Подвал на страницах документации */
 .footer-docs {
     margin-top: 30px;
     display: block;
     bottom: 0;
     width: 100%;
     height: 50px;
-    border-top: 1px solid #e7e9ed;
 }
 
 .footer-copyright-docs {
-    display: inline-block;
-    color: rgb(8, 8, 8);
+    color: #080808;
     font-size: small;
     padding-top: 15px;
 }
 
+.footer-links {
+    padding-top: 15px;
+    color: white;
+    font-size: small;
+}
+
+/* Сайдбар на странице документаций */
 #docs-nav {
     overflow-y: auto;
     padding: 1rem;
-}
-
-.docs-wrapper {
-    margin-top: 90px;
 }
 
 #docs-sidebar.sidebar-visible {
@@ -111,38 +167,76 @@ html {
 }
 
 .docs-sidebar {
-    width: 250px;
+    width: 300px;
     position: fixed;
     z-index: 10;
     top: 60px;
     height: calc(100% - 60px);
     background: #fff;
     overflow-y: auto;
-    scrollbar-color: rgba(0, 0, 0, 0.2) #f5f5f5;
-    scrollbar-width: thin;
     transition: transform 0.35s ease-in-out;
     box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.docs-article {
-    padding: 4rem;
-    color: #5d6778;
+.docs-sidebar.sidebar-hidden {
+    transform: translateX(-300px);
+    display: block;
+}
 
+.docs-nav .nav-item.section-title .nav-link {
+    padding: 0;
+    display: inline-block;
+}
+
+.docs-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #5d6778;
+}
+
+.docs-nav .nav-link.active {
+    color: #0082fb;
+}
+
+.docs-nav .nav-link:hover {
+    color: #77bdff;
+}
+
+.docs-nav .nav-item {
+    margin-left: 2.5rem;
+}
+
+/* Боковая полоска в сайдбаре */
+.nav-link .scrollto:before {
+    background-color: #ff00dd;
+    content: ' ';
+    display: inline-block;
+    height: inherit;
+    left: 0;
+    margin-top: -0.5rem;
+    position: fixed;
+    width: 3px;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.docs-article {
+    padding: 4rem 4rem 4rem 4rem;
+    color: #414141;
 }
 
 .docs-article .section-heading {
     font-size: 1.875rem;
     margin-bottom: 2rem;
-    color: #252930;
 }
 
 .docs-article .docs-section {
-    padding: 2rem ;
+    padding: 2rem;
     border-bottom: 1px solid #e7e9ed;
 }
 
 /* Кастомный скроллбар */
-
 .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
     background-color: #F5F5F5;
@@ -150,10 +244,17 @@ html {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #c5cee0;
 }
 
 .custom-scrollbar {
     scrollbar-color: #4285F4 #F5F5F5;
+}
+
+@media screen and (max-width: 900px) {
+    .headline {
+        font-family: inherit;
+        font-size: 27px;
+        font-weight: 200;
+    }
 }
