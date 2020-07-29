@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// 1. Configuration, colors
+// @import
+//   'abstracts/_variables';
+//   'abstracts/_functions',
+//   'abstracts/_mixins';
+
+// 2. Base 
+@import
+  'base/_reset';
+
+
+// 3. Layout
+@import
+  'layout/_header',
+  'layout/_sidebar',
+  'layout/_footer';
+
+  
+// 4. Components
+@import
+  'components/_forms',
+  'components/_card';
+
+
+
+  /* Потом удалить */
+.policy {
+  margin-top: 300px;
+  font-size: 40px;
+  font-weight: 100;
+}
+

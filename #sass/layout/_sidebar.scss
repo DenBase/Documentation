@@ -1,0 +1,125 @@
+/* Сайдбар на странице документаций */
+#docs-nav {
+    overflow-y: auto;
+}
+
+#docs-sidebar.sidebar-visible {
+    transform: translateX(0);
+    display: block;
+}
+
+.docs-sidebar {
+    width: 300px;
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    height: calc(100% - 60px);
+    background: #fff;
+    overflow-y: auto;
+    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.docs-sidebar.sidebar-hidden {
+    transform: translateX(-300px);
+    display: block;
+}
+
+.docs-nav .nav-item.section-title .nav-link {
+    padding: 0;
+    display: inline-block;
+}
+
+.docs-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #5d6778;
+    font-size: 15px;
+}
+
+.docs-nav .nav-link.active {
+    color: #0082fb;
+    &:hover {
+        color: #77bdff;
+    }
+}
+
+.docs-nav .nav-item {
+    margin-left: 2.5rem;
+}
+
+.section-title {
+    padding: 9px;
+    font-size: 16px;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+/* Контейнер статьи */
+.article {
+    margin-top: 70px;
+}
+
+.docs-article {
+    color: #414141;
+}
+
+.inner-navigation {
+    font-size: 15px;
+    position: fixed;
+}
+
+.inner-navigation a {
+    color: gray;
+    &:hover {
+        color: #0082fb;
+    }
+}
+
+.inner-navigation .nav-item.active {
+    color: #0082fb;
+}
+
+.docs-article .section-heading {
+    font-size: 1.875rem;
+}
+
+.docs-section {
+    padding: 4rem 0rem 1rem 0rem; 
+    border-bottom: 1px solid #e7e9ed;
+}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #c5cee0;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 1200px) {
+    .docs-sidebar {
+        transition: transform 0.35s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headline {
+        font-family: inherit;
+        font-size: 27px;
+        font-weight: 200;
+    }
+    .inner-navigation {
+        position: relative;
+    }
+
+    .docs-sidebar {
+        transition: transform 0.35s ease-in-out;
+    }
+}

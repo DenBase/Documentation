@@ -1,300 +1,345 @@
+@charset "UTF-8";
+/*-----Обнуление-----*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
 html {
-    min-height: 100%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.15;
 }
 
-/* шапка */
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*--------Шапка-----------*/
 .header {
-    height: 60px;
-}
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-/* форма гдобального поиска */
-.form-control {
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
-    height: 3rem;
-    border-color: #dfdfdf;
-}
-
-.main-search-box {
-    max-width: 900px;
-}
-
-.search-form {
-    position: relative;
-    width: 100%;
-}
-
-/* форма поиска на странице документация*/
-.search-form .search-input {
-    width: 85%;
-    height: 38px;
-    font-size: 15px;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 30px;
-    margin: 20px;
-}
-
-.search-form .search-btn {
-    color: #cacaca;
-    background: none;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 22px;
-    margin-right: 24px;
-}
-
-.form-control-docs {
-    height: 2rem;
-    border: 1px solid #ced4da;
-} 
-
-.form-control-docs:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.1rem #007bff40;
-}
-
-.docs-sidebar-toggler {
-    display: inline-block;
-    border: none;
-    padding: 0;
-    font-size: 20px;
-    position: relative;
-    background-color: #f8f9fa;
-}
-
-/* Карточки на главной */
-.card {
-    border-radius: 5px;
-    background: #ffffff;
-}
-
-.card:hover {
-    box-shadow: 0 0.1rem 0.1rem #0000001a !important;
-    background: #ffffff;
-}
-
-.card-icon {
-    width: 60px;
-    height: 60px;
-    padding-top: 12px;
-    display: inline-block;
-}
-
-.card-title-text {
-    font-weight: 100;
-    font-size: 2rem;
-    display: inline-block;
-    position: relative;
-    top: 0.5rem;
-}
-
-.card-icon-holder {
-    display: inline-block;
-    background: #f8f9fa;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.card {
-    margin: 20px 0px;
-}
-
-.card-discription {
-    margin: 10px 12px 20px 42px;
-}
-
-.card-body .card-link-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-/* Форма авторизации */
-.form-heding {
-    font-size: 2em;
-    text-align: center;
-    margin: 160px 0px 30px;
-}
-
-/* Подвал на главной */
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #1d2447;
-}
-
-/* Подвал на страницах документации */
-.footer-docs {
-    margin-top: 30px;
-    display: block;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-
-.footer-copyright-docs {
-    color: #080808;
-    font-size: small;
-    padding-top: 15px;
-}
-
-.footer-links {
-    padding-top: 15px;
-    color: white;
-    font-size: small;
+  height: 60px;
 }
 
 /* Сайдбар на странице документаций */
 #docs-nav {
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 #docs-sidebar.sidebar-visible {
-    transform: translateX(0);
-    display: block;
+  transform: translateX(0);
+  display: block;
 }
 
 .docs-sidebar {
-    width: 300px;
-    position: fixed;
-    z-index: 10;
-    top: 60px;
-    height: calc(100% - 60px);
-    background: #fff;
-    overflow-y: auto;
-    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: fixed;
+  z-index: 10;
+  top: 60px;
+  height: calc(100% - 60px);
+  background: #fff;
+  overflow-y: auto;
+  box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .docs-sidebar.sidebar-hidden {
-    transform: translateX(-300px);
-    display: block;
+  transform: translateX(-300px);
+  display: block;
 }
 
 .docs-nav .nav-item.section-title .nav-link {
-    padding: 0;
-    display: inline-block;
+  padding: 0;
+  display: inline-block;
 }
 
 .docs-nav .nav-link {
-    display: inline-block;
-    position: relative;
-    padding: 0.5rem 1rem;
-    color: #5d6778;
-    font-size: 15px;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #5d6778;
+  font-size: 15px;
 }
 
 .docs-nav .nav-link.active {
-    color: #0082fb;
+  color: #0082fb;
 }
-
-.docs-nav .nav-link:hover {
-    color: #77bdff;
+.docs-nav .nav-link.active:hover {
+  color: #77bdff;
 }
 
 .docs-nav .nav-item {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .section-title {
-    padding: 9px;
-    font-size: 16px;
+  padding: 9px;
+  font-size: 16px;
 }
 
 .btn.focus, .btn:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 /* Контейнер статьи */
 .article {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .docs-article {
-    color: #414141;
+  color: #414141;
 }
 
 .inner-navigation {
-    font-size: 15px;
-    position: fixed;
+  font-size: 15px;
+  position: fixed;
 }
 
 .inner-navigation a {
-    color: gray;
+  color: gray;
 }
-
 .inner-navigation a:hover {
-    color: #0082fb;
+  color: #0082fb;
 }
 
 .inner-navigation .nav-item.active {
-    color: #0082fb;
+  color: #0082fb;
 }
 
 .docs-article .section-heading {
-    font-size: 1.875rem;
+  font-size: 1.875rem;
 }
 
 .docs-section {
-    padding: 4rem 0rem 1rem 0rem; 
-    border-bottom: 1px solid #e7e9ed;
+  padding: 4rem 0rem 1rem 0rem;
+  border-bottom: 1px solid #e7e9ed;
 }
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-    background-color: #F5F5F5;
+  width: 5px;
+  background-color: #F5F5F5;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    border-radius: 15px;
-    background-color: #c5cee0;
+  border-radius: 15px;
+  background-color: #c5cee0;
 }
 
 /* Медиа запросы */
 @media screen and (max-width: 1200px) {
-    .docs-sidebar {
-        transition: transform 0.35s ease-in-out;
-    }
+  .docs-sidebar {
+    transition: transform 0.35s ease-in-out;
+  }
+}
+@media screen and (max-width: 900px) {
+  .headline {
+    font-family: inherit;
+    font-size: 27px;
+    font-weight: 200;
+  }
+
+  .inner-navigation {
+    position: relative;
+  }
+
+  .docs-sidebar {
+    transition: transform 0.35s ease-in-out;
+  }
+}
+html {
+  min-height: 100%;
+  position: relative;
 }
 
-@media screen and (max-width: 900px) {
-    .headline {
-        font-family: inherit;
-        font-size: 27px;
-        font-weight: 200;
-    }
-    .inner-navigation {
-        position: relative;
-    }
+/* Подвал на главной */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1d2447;
+}
 
-    .docs-sidebar {
-        transition: transform 0.35s ease-in-out;
-    }
+/* Подвал на страницах документации */
+.footer-docs {
+  margin-top: 30px;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-copyright-docs {
+  color: #080808;
+  font-size: small;
+  padding-top: 15px;
+}
+
+.footer-links {
+  padding-top: 15px;
+  color: white;
+  font-size: small;
+}
+
+/* форма глобального поиска на главной*/
+.form-control {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  height: 3rem;
+  border-color: #dfdfdf;
+}
+
+.main-search-box {
+  max-width: 900px;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+}
+
+/* Форма авторизации на странице входа*/
+.form-heding {
+  font-size: 2em;
+  text-align: center;
+  margin: 160px 0px 30px;
+}
+
+/* форма поиска на странице документация*/
+.search-form .search-input {
+  width: 85%;
+  height: 38px;
+  font-size: 15px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 30px;
+  margin: 20px;
+}
+
+.search-form .search-btn {
+  color: #cacaca;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  margin-right: 24px;
+}
+
+.form-control-docs {
+  height: 2rem;
+  border: 1px solid #ced4da;
+}
+.form-control-docs:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #007bff40;
+}
+
+.docs-sidebar-toggler {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+/* Карточки на главной */
+.card {
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 0 0.1rem 0.1rem #0000001a !important;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+  display: inline-block;
+}
+
+.card-title-text {
+  font-weight: 100;
+  font-size: 2rem;
+  display: inline-block;
+  position: relative;
+  top: 0.5rem;
+}
+
+.card-icon-holder {
+  display: inline-block;
+  background: #f8f9fa;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.card-discription {
+  margin: 10px 12px 20px 42px;
+}
+
+.card-body .card-link-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* Потом удалить */
 .policy {
-    margin-top: 300px;
-    font-size: 40px;
-    font-weight: 100;
+  margin-top: 300px;
+  font-size: 40px;
+  font-weight: 100;
 }

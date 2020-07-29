@@ -1,0 +1,66 @@
+/* форма глобального поиска на главной*/
+.form-control {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    height: 3rem;
+    border-color: #dfdfdf;
+}
+
+.main-search-box {
+    max-width: 900px;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+}
+
+/* Форма авторизации на странице входа*/
+.form-heding {
+    font-size: 2em;
+    text-align: center;
+    margin: 160px 0px 30px;
+}
+
+/* форма поиска на странице документация*/
+.search-form .search-input {
+    width: 85%;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 20px;
+}
+
+.search-form .search-btn {
+    color: #cacaca;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    margin-right: 24px;
+}
+
+.form-control-docs {
+    height: 2rem;
+    border: 1px solid #ced4da;
+    &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.1rem #007bff40;
+    }
+} 
+
+
+.docs-sidebar-toggler {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    position: relative;
+    background-color: #f8f9fa;
+}
