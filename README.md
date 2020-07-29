@@ -1,2 +1,2 @@
-# Site Base Knowledge whiер Documentation 
+# Site Base Knowledge whith Documentation (scss)
 Добавил страницу документации БАРС
